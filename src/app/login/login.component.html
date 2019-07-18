@@ -1,0 +1,27 @@
+<div class="main_container">
+  
+  <mat-card style="margin-right: 35%" class="mat-elevation-z12 login_card">
+  
+  
+    <h2 fxLayout="row" fxLayoutAlign="center center" class="login_form_heading">Login</h2>
+  
+    <form class="example-form">
+      <mat-form-field class="formfield">
+        <input matInput placeholder="Email" required>
+      </mat-form-field><br>
+      <mat-form-field class="formfield">
+        <input matInput placeholder="Password" type="password" required (keyup)="keyPress($event)">
+      </mat-form-field>
+    </form>
+    <br>
+  
+    <button mat-raised-button class="mat-elevation-z8 login_button" (click)="login();">Login</button><br>
+  
+    <h5 fxLayout="row" fxLayoutAlign="center center"> Don't have an account ? <br></h5>
+    <br><br>
+  
+    <button mat-raised-button color="primary" class="mat-elevation-z18 register_button" (click)="signup();">Register</button><br>
+  
+  </mat-card>
+  </div>
+  

@@ -1,0 +1,67 @@
+
+
+.main_container
+{
+    width:100%;
+    height:100%;
+    background-color: whitesmoke;
+
+}
+
+
+
+.login_card
+{
+  float: right;
+  width: 28%;
+  height: 90vh;
+  margin-right: 8%;
+  margin-top: 1%;
+  border-radius: 3%;
+  background-color: white;
+}
+
+.login_form_heading
+{
+
+    color:black;
+    font-weight:14px;
+    margin:5%;
+
+}
+
+
+.formfield
+{
+    width:88%;
+    margin-right:3%;
+    margin-left:3%;
+    margin-top:3%;
+}
+
+
+.login_button
+{
+    width:85%;
+    margin-left:5%;
+    background-color:#5cb85c;
+    padding:3px;
+    border-radius:10px;
+    color:white;
+    font-size:14px;
+    font-weight:bold;
+}
+
+
+.register_button
+{
+    width:85%;
+    margin:5%;
+    margin-top: 2%;
+    padding:3px;
+    border-radius:10px;
+    color:white;
+    font-size:14px;
+    font-weight:bold;
+}
+

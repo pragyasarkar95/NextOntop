@@ -1,0 +1,34 @@
+<div class="sidenav">
+    <div fxLayout="row" fxLayoutAlign="center center">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<mat-icon>dashboard</mat-icon>
+        <a (click)="home_page()" style="cursor: pointer;font-size: 20px;color: rgb(8, 8, 8);">Dashboard</a></div><br />
+    <mat-divider></mat-divider>
+    <div fxLayout="row" fxLayoutAlign="center center">
+        &nbsp;<mat-icon>local_library</mat-icon>
+        <a (click)="about_page()" style="cursor: pointer;font-size: 20px;color:  rgb(8, 8, 8)">&nbsp;About</a>
+    </div><br />
+    <mat-divider></mat-divider>
+    <div fxLayout="row" fxLayoutAlign="center center">
+        &nbsp;&nbsp;<mat-icon>account_box</mat-icon>
+        <a (click)="profile_page()" style="cursor: pointer;font-size: 20px;color:  rgb(8, 8, 8)">Services</a>
+    </div>
+</div>
+<mat-card style="height: 95%; overflow-y: scroll">
+
+    <div fxLayout="row" fxLayoutAlign="center center" style="margin-left: 35%">
+        <div class="ChartOne">
+            <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+                [options]="pieChartOptions" [plugins]="pieChartPlugins" [legend]="pieChartLegend">
+            </canvas>
+        </div>
+        <div class="ChartTwo" style="display: block">
+            <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType">
+            </canvas>
+        </div>
+    </div>
+    <div class="ChartThree" style="display: block">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+            [plugins]="barChartPlugins" [legend]="barChartLegend" [chartType]="barChartType">
+        </canvas>
+    </div>
+</mat-card>

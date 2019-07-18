@@ -1,0 +1,31 @@
+<div class="main_container">
+
+    <mat-card class="mat-elevation-z12 login_card" style="margin-right: 35%">
+
+            <h2 class="login_form_heading">Register</h2>
+
+        <form>
+            <mat-form-field class="formfield">
+                <input matInput placeholder="First Name" required>
+            </mat-form-field>
+            <mat-form-field class="formfield">
+                <input matInput placeholder="Last Name" required>
+            </mat-form-field>
+            <mat-form-field class="formfield">
+                <input matInput placeholder="Email" required>
+            </mat-form-field>
+            <mat-form-field class="formfield">
+                <input matInput placeholder="Password" type="password" required>
+            </mat-form-field>
+            <mat-form-field class="formfield">
+                <input matInput placeholder="Confirm Password" type="password" required>
+            </mat-form-field>
+
+            <mat-form-field class="formfield">
+                <input matInput placeholder="Mobile No" type="text" required>
+            </mat-form-field>
+        </form>
+        <button mat-raised-button class="mat-elevation-z8 login_button" (click)="register();">Register</button><br>
+
+    </mat-card>
+</div>
